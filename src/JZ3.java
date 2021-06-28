@@ -1,4 +1,5 @@
-import lib.function;
+package src;
+
 
 public class JZ3 {
     public int findRepeatNumber(int[] nums) {
