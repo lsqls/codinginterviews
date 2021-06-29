@@ -18,7 +18,7 @@ https://www.nowcoder.com/ta/coding-interviews
 | 10.跳台阶                         | `Dynamic Programming`,       |      |
 | 10.变态跳台阶                     | `Dynamic Programming`,`Math` |      |
 | 10.矩形覆盖                       | `Dynamic Programming`,       |      |
-| 11.旋转数组的最小数字             | `Binary Search`,             | 常考 |
+| 11.**旋转数组的最小数字**             | `Binary Search`,             | 常考 |
 | 12.矩阵中的路径                   | `BackTracking`               |      |
 | 13.机器人的运动范围               | `BackTracking`               | 关注 |
 | 14.剪绳子                         | `Dynamic Programming`        |      |
@@ -49,9 +49,9 @@ https://www.nowcoder.com/ta/coding-interviews
 | 36.二叉搜索树与双向链表           | `Linked List`                |      |
 | 37.序列化二叉树                   | `Tree`                       | 关注 |
 | 38.字符串的排列                   | `String`                     | 关注 |
-| 39.数组中出现次数超过一半的数字   | `Array`                      | 常考 |
+| 39.**数组中出现次数超过一半的数字**   | `Array`                      | 常考 |
 | 40.最小的k个数                    | `Heap`                       |      |
-| 41.数据流中的中位数               |                              | 常考 |
+| 41.**数据流中的中位数**              |                              | 常考 |
 | 42.连续子数组最大和               | `Dynamic Programming`        |      |
 | 43.整数中1出现的次数              | `Bit Manipulation`           | 关注 |
 | 44.数字序列中某一位的数字         | `Math`                       | 关注 |
