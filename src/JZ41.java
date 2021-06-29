@@ -1,10 +1,9 @@
 package src;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.PriorityQueue;
 
 public class JZ41 {
-    //二分查找+插入排序
+    //大小顶堆
     public static void main(String[] args) {
        MedianFinder medianFinder= new MedianFinder();
        medianFinder.addNum(1);
@@ -17,42 +16,46 @@ public class JZ41 {
 }
 
 class MedianFinder{
-    List<Integer> iList;
+    PriorityQueue<Integer> lheap,sheap;
+
+
     public MedianFinder() {
-        iList=new ArrayList<>();
+
+        //小顶堆存大于等于中位数的数
+        sheap=new PriorityQueue<>();
+        //大顶堆存小于等于中位数的数
+        lheap=new PriorityQueue<>((a,b)->{
+            return b-a;
+        });
+        
+        //由上可知，小顶堆中的数一定是大于等于大顶堆中的数
+        //保证两个堆顶是中位数
+        //小顶堆的大小m和大顶堆的大小n的约束关系：m==n或m-n==1
     }
     
     public void addNum(int num) {
-        int left=0,right=iList.size()-1;
-    
+        
+        // 当 m 1= n：需向 小顶堆 添加一个元素。实现方法：将新元素 num 插入至 大顶堆 ，再将 大顶堆堆顶元素插入至 小顶堆 ；
+        // 当 m-n==1：需向 大顶堆 添加一个元素。实现方法：将新元素 num 插入至 小顶堆 ，再将 小顶堆 堆顶元素插入至 大顶堆 ；
 
-        int mid=0;
-        while(left<=right){
-            mid=(left+right)/2;
-            if(num<iList.get(mid)){
-                right=mid-1; 
-            }
 
-            else if(num>iList.get(mid)){
-                left=mid+1;
-            }
 
-            else{
-                left=mid;
-                break;
-            }
-
-            
-
-            
+        if(sheap.size()==lheap.size()){
+            lheap.add(num);
+            sheap.add(lheap.poll());
         }
-        iList.add(left, num);
+        else{
+            sheap.add(num);
+            lheap.add(sheap.poll());
+        }
+
 
 
     }
     
     public double findMedian() {
-        int mid=iList.size()/2;
-        return iList.size()%2==0?(double)(iList.get(mid)+iList.get(mid-1))/2.0:iList.get(mid);
+
+        return sheap.size()==lheap.size()?(double)(sheap.peek()+lheap.peek())/2.0:sheap.peek();
+        
     }
 }
