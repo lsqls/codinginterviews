@@ -73,7 +73,7 @@ https://www.nowcoder.com/ta/coding-interviews
 | 57.和为S的连续正数序列            | `Array`                      | 关注 |
 | 58.翻转单词序列                   | `String`                     |      |
 | 58.左旋转字符串                   | `String`                     |      |
-| 59.滑动窗口的最大值               | `Queue`                      | 常考 |
+| 59.**滑动窗口的最大值**              | `Queue`                      | 常考 |
 | 60.n个骰子的点数                  |                              |      |
 | 61.扑克牌顺子                     |                              |      |
 | 62.孩子们的游戏                   | `Math`                       |      |
