@@ -3,45 +3,34 @@ package src;
 public class JZ13 {
 
 
-    int cnt=0;
-    int gm,gn;
+    int gm,gn,gk;
     public int movingCount(int m, int n, int k) {
+        gm=m;gn=n;gk=k;
+        boolean[][] checked=new boolean[m][n];
 
-
-        gm=m;gn=n;
-        int[][] map=new int[m][n];
-        int l=Math.max(m, n);
-
-        int[] digitSums=new int[l];
-
-        for(int i=0;i<l;i++){
-            digitSums[i]=digitSum(i);
-        }
-
-
-        for(int i=0;i<m;i++){
-            for(int j=0;j<n;j++){
-                map[i][j]=(digitSums[i]+digitSums[j])>k?0:1;
-            }
-        }
-
-        dfs(0,0,map);
-        return cnt;
+        return dfs(0,0, checked);
     }
 
     int[][] dirs=new int[][]{{0,1},{0,-1},{1,0},{-1,0}};
-    private void dfs(int i, int j, int[][] map) {
+    private int dfs(int i, int j, boolean[][] checked) {
         if(i<0||j<0||i>=gm||j>=gn)
-            return;
-        if(map[i][j]==0)
-            return;
+            return 0;
+        if(checked[i][j]==true)
+            return 0;
+        checked[i][j]=true;
 
-        cnt++;
-        map[i][j]=0;
 
+        if(digitSum(i)+digitSum(j)>gk)
+            return 0;
+
+        int cnt=1;
         for(int[] dir:dirs){
-            dfs(i+dir[0], j+dir[1], map);
+            cnt+=dfs(i+dir[0], j+dir[1],checked);
         }
+
+        return cnt;
+
+        
     }
 
 
@@ -52,7 +41,6 @@ public class JZ13 {
             num/=10;
         }
         return sum;
-
     }
     public static void main(String[] args) {
         new JZ13().digitSum(213);
