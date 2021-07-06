@@ -2,7 +2,6 @@ package src;
 
 import java.util.Arrays;
 
-import lib.function;
 
 public class JZ21 {
     public int[] exchange(int[] nums) {
