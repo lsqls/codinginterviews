@@ -81,5 +81,5 @@ https://www.nowcoder.com/ta/coding-interviews
 | 64.求1+2+3+...+n                  |                              |      |
 | 65.不用加减乘除做加法             | `Bit Manipulation`           |      |
 | 66.构建乘积数组                   | `Array`                      |      |
-| 67.把字符串转成整数               | `Bit Manipulation`           | 关注 |
+| 67.**把字符串转成整数**               | `Bit Manipulation`           | 关注 |
 | 68.树中两个节点的最低公共祖先     |                              | 常考 |
