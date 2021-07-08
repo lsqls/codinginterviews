@@ -54,7 +54,7 @@ https://www.nowcoder.com/ta/coding-interviews
 | 41.**数据流中的中位数**              |                              | 常考 |
 | 42.连续子数组最大和               | `Dynamic Programming`        |      |
 | 43.**整数中1出现的次数**              | `Bit Manipulation`           | 关注 |
-| 44.数字序列中某一位的数字         | `Math`                       | 关注 |
+| 44.**数字序列中某一位的数字**         | `Math`                       | 关注 |
 | 45.把数组排成最小的数             | `String`                     |      |
 | 46.把数字翻译成字符串             | `String`                     |      |
 | 47.礼物的最大价值                 | `Dynamic Programming`        |      |
