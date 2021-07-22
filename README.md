@@ -27,8 +27,8 @@ https://www.nowcoder.com/ta/coding-interviews
 | 17.打印从1到最大的n位数           |                              |      |
 | 18.O(1)时间删除链表节点           | `Linked List`                |      |
 | 18.删除链表中重复结点             | `Linked List`                | 常考 |
-| 19.正则表达式匹配                 | `String`                     |      |
-| 20.表示数值的字符串               | `String`                     |      |
+| 19.*正则表达式匹配*                 | `String`                     |      |
+| 20.*表示数值的字符串*               | `String`                     |      |
 | 21.调整数组顺序使奇数位于偶数前面 |                              | 关注 |
 | 22.链表中倒数第k个结点            | `Linked List`                | 常考 |
 | 23.链表中环的入口结点             | `Linked List`                | 常考 |
