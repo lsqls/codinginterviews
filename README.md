@@ -46,7 +46,7 @@ https://www.nowcoder.com/ta/coding-interviews
 | 33.二叉搜索树的后序遍历序列       | `Tree`                       | 常考 |
 | 34.二叉树中和为某一值的路径       | `Tree`                       |      |
 | 35.复杂链表的复制                 | `Linked List`                |      |
-| 36.二叉搜索树与双向链表           | `Linked List`                |      |
+| 36.*二叉搜索树与双向链表*           | `Linked List`                |      |
 | 37.序列化二叉树                   | `Tree`                       | 关注 |
 | 38.字符串的排列                   | `String`                     | 关注 |
 | 39.**数组中出现次数超过一半的数字**   | `Array`                      | 常考 |
